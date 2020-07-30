@@ -1,0 +1,76 @@
+.buttoncontainer {
+  width: 100vw;
+  height: 10vw
+}
+
+
+.minibutton {
+  min-width: 100px !important;
+  font-size: calc(6px + 0.4vw);
+  width: calc(80px + 3vw) !important;
+  height: calc(20px + 0.5vw) !important;
+  margin-top: 2vw !important;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: bold;
+  Bottom: calc(10px - 1.0vw);
+  bottom: 1vw;
+  color: white
+}
+
+.spacer {
+  opacity: 0;
+  width: 4vw;
+}
+
+.minibuttonposition {
+  position: absolute
+}
+
+.myshadow1 {
+  box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 1);
+  z-index: 10;
+}
+
+.myshadowbut {
+  box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 1);
+  z-index: 10;
+}
+
+.myshadowbut:hover {
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 1);
+  color: white !important;
+}
+
+.exiter{
+z-index: 999;
+width: 72vw;
+position: fixed;
+margin-top: -4vw;
+height: 100px!important;
+display: flex;
+justify-content: flex-end;
+}
+
+
+
+.exit:hover {
+  background: none !important;
+  color: gray;
+}
+
+.exit {
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 1);
+  background: white !important;
+  color: gray;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+
+
+.CreateIcon {
+  font-size: 1.5em !important;
+  padding-bottom: 0.2em;
+  padding-left: -20px;
+}

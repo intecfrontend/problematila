@@ -1,0 +1,8 @@
+.modiv {
+    border: 9px solid red !important
+  }
+  .modal{
+    border: 9px solid red !important;
+    z-index: 200;
+    display: absolute;
+  }

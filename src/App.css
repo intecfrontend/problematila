@@ -1,0 +1,188 @@
+.App {
+  text-align: center
+}
+
+.networkstitels {
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+
+.fixedheight55 {
+  height: 55px !important
+}
+.courseimg {
+  padding: 5%;
+  background: rgba(242, 239, 239, 0.6);
+  width: 100%;
+}
+
+.courseimgover {
+  z-index: 100;
+  transition: background 2s ease-in-out;
+  background: none;
+  position: absolute;
+}
+
+.courseimgover:hover {
+  cursor: pointer;
+  background: rgba(255, 0, 0, 0.6);
+  z-index: 700;
+}
+
+.info {
+  width: 100% !important;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* 
+.info:hover {
+
+  opacity: 0.8;
+
+} */
+
+
+
+
+
+.buttoncontainer {
+  background-color: black;
+  height: 70vh;
+  color: #fff;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30vh;
+}
+
+.boxes {
+  margin: 20px;
+  margin-top: 15px;
+  background: rgb(198, 177, 198);
+  overflow: hidden;
+  height: 200px;
+  max-height: 20vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+.block {
+  background-color: orangered;
+  height: 30px;
+  color: #fff;
+  top: 0;
+  width: 10%;
+  text-align: center;
+  font-size: 8px !important;
+}
+
+.active {
+  opacity: 1;
+  transition: opacity 2s;
+  opacity: 1;
+
+}
+
+.Modaltemplate {
+  position: absolute;
+  z-index: 100;
+}
+
+.Coursetemplate {
+  position: absolute;
+  z-index: -30;
+  top: 250px;
+}
+
+.moving {
+  margin-left: -2vw;
+  transition: all 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 2s;
+  transform: opacity(0);
+}
+
+.hiddenb {
+  transition: all 0.5s;
+  margin-left: 40vw;
+}
+
+
+
+
+
+.cont {
+  padding: 10vw;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+
+}
+
+.navwrap {
+  height: 10vw;
+  background: gold
+}
+
+.navdiv {
+  font-size: 1vw;
+  color: black;
+  margin: 2vw 10vw 0vw 20vw;
+  padding-top: 2vw;
+  text-align: center;
+  width: 60%;
+  margin: O auto
+}
+
+.navp {
+  color: red;
+  background: white;
+  width: 100%;
+
+  margin: 3vw 0vw 0vw 0vw;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .cardwrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vw;
+    padding: 0vw 0vw;
+    width: 70vw;
+    margin-left: 15vw
+  }
+}
