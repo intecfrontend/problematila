@@ -16,14 +16,21 @@ Buttoni {
   display: flex;
   justify-content: center;
 }
-.Lower{padding-right: 1vw; padding-top: calc(15px - 1vw)}
+
+.Lower {
+  padding-right: -10vw;
+  padding-top: calc(15px - 1vw);
+  color: white;
+  position: absolute;
+}
+
 .buttonmodal {
   display: flex;
   justify-content: flex-end;
-  align-items: center; 
-  padding-left: 5vw;
+  align-items: center;
   padding-bottom: 1vw;
-  width: 80vw !important;
+  margin-bottom: -25px;
+  width: 100% !important;
   background: red;
 
   /* padding-bottom: 15px; */
@@ -35,10 +42,7 @@ Buttoni {
 }
 
 .bottomstripe {
-  padding: 15px 0px 0px 1vw !important;
-  height: 50px;
-  width: 81vw;
-  color: white
+
 }
 
 
@@ -55,14 +59,15 @@ body.modal-open {
 .modal-img {
   object-fit: scale-down;
   padding: -6vw 0vw 0vw 0vw;
-  width: 100%
+  width: 100%;
+  margin: -10vw 0vw
 }
 
 .middle {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   width: 80vw;
-  padding-top: 5vw!important;
+  padding-top: 5vw !important;
 }
 
 .subtitle {
@@ -174,6 +179,6 @@ justify-content: center;
   border-radius: 0.3vw;
   overflow-y: auto;
   padding: 5vw 5vw 0vw 5vw;
-  margin: 10vw;
+  margin: 5vw 10vw 10vw 10vw;
   width: 80vw;
 }

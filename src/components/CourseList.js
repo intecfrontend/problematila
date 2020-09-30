@@ -1,42 +1,41 @@
 import React, { useState, useContext } from "react";
 import Course from "../Course";
+import ModalContent from "./modals/ModalContent";
 import "./button.css";
 import "../App.css";
 import Buttoncontainer from "./Buttoncontainer";
 import { OpleidingContext } from "../OpleidingContext";
 import Button from "./button";
-import Test from "./Test";
 
-const CourseList = ({setModalIsOpen}) => {
-  const [movies, setMovies] = useContext(OpleidingContext);
-//  const [selected, setSelected] = useContext('test');
-
-
-
+const CourseList = ({ setModalIsOpen, setActiveCourse }) => {
+  const [courses, setCourses] = useContext(OpleidingContext);
+  //  const [selected, setSelected] = useContext('test');
 
   return (
     <div className="Coursetemplate cardcont">
       <Buttoncontainer />
       <span className="cardwrap">
-        {movies.map((movie) => (
-          <Course
-            
-            setModalIsOpen={setModalIsOpen}
-            img={movie.img}
-            titel={movie.titel}
-
-            modaltitel={movie.modaltitel}
-            
-            ondertitel={movie.ondertitel}
-            periode={movie.periode}
-            categorie={movie.categorie}
-            _id={movie.id}
-            key={movie.id}
-         / >
-
+        {courses.map((course) => (
+          <>
+            <Course
+              setModalIsOpen={setModalIsOpen}
+              setActiveCourse={setActiveCourse}
+              course={course}
+              ribbon={course.ribbon}
+              img={course.img}
+              titel={course.titel}
+              modaltitel={course.modaltitel}
+              ondertitel={course.ondertitel}
+              periode={course.periode}
+              categorie={course.categorie}
+              _id={course.id}
+              key={course.id}
+              modalondertitel={course.ondertitel}
+            />
+            {/* <ModalContent modalondertitel={course.modalondertitel} />*/}
+          </>
         ))}
       </span>
-      
     </div>
   );
 };

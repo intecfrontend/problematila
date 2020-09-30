@@ -1,0 +1,18 @@
+.oplbtn {
+  padding: 4px 2px 2px 2px;
+  /* color: black!important; */
+}
+
+
+.networkstitels:hover {
+  opacity: 0.5 !important;
+  cursor: pointer;
+}
+
+#networkstitelsid:hover {
+color: lime}
+
+.hoverspanner:hover {
+  opacity: 0.5 !important;
+  cursor: pointer;
+}

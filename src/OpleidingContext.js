@@ -3,17 +3,18 @@ export const OpleidingContext = createContext();
 
 // verander alles in geel na :
 export const OpleidingProvider = (props) => {
-  const [movies, setMovies] = useState([
+  const [courses, setCourses] = useState([
     {
       id: 1,
       className: "normalopl", //promoopl, fullopl//*
       img: "frontend1.jpg",
       categorie: "devmt",
+      ribbon: "plaats",
       titel: "Digital Skills",
       ondertitel: "Maak een webshop met frameworks",
-      periode: "03 Augustus - 10 December",
+      periode: "13 Augustus - 10 December",
 
-      modaltitel: "kuisvrouw",
+      modaltitel: "Frontender",
       modalondertitel: "Webshops zitten in de lift",
       modalImg: "location.jpg",
       binnenimg: "frontendklas2019.jpg",
@@ -35,12 +36,13 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$ Creatief en computerminded zijn",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++). Creatief en computerminded zijn.",
     },
 
     {
       id: 2,
       img: "ukFrontend.jpg",
+      ribbon: "plaatsweg",
       titel: "Front-End in English",
       ondertitel: "Web Development given in English",
       categorie: "devmt",
@@ -68,15 +70,16 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
     {
       id: 3,
       img: "Csharp.jpg",
+      ribbon: "plaatsweg",
       titel: ".Net Developer",
       categorie: "devmt",
       periode: "03 Augustus - 10 December",
-      ondertitel: "Bijzonder gegeerd op de arbeidsmarkt",
+      ondertitel: "Gegeerd op de arbeidsmarkt",
       modaltitel: "kuisvrouw",
       modalondertitel: "Webshops zitten in de lift",
       modalImg: "location.jpg",
@@ -99,11 +102,12 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
     {
       id: 4,
       img: "java.jpg",
+      ribbon: "plaatsweg",
       titel: "Java Developer",
       ondertitel: "Optie IOT",
       categorie: "devmt",
@@ -131,11 +135,12 @@ export const OpleidingProvider = (props) => {
         "Weinige beroepen zijn voor het leven maar deze is het zeker, bovendien zal je ook een leven lang kunnen evolueren in dit beroep waar een groeiende vraag naar is vanuit de bedrijfswereld.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Kennis van Windows 10.$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Kennis van Windows 10.",
     },
     {
       id: 5,
       img: "networks.jpg",
+      ribbon: "plaatsweg",
       titel: "PC & Netwerktechnicus",
       ondertitel: "Handige harries met logica",
       categorie: "netw",
@@ -163,11 +168,12 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
     {
       id: 51,
       img: "ukFrontend.jpg",
+      ribbon: "plaats",
       titel: "PC & Netwerktechnicus ",
       ondertitel: "voor anderstaligen",
       categorie: "netw",
@@ -195,11 +201,12 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
     {
       id: 6,
       img: "java.jpg",
+      ribbon: "plaatsweg",
       titel: "Java Developer",
       ondertitel: "Pure BackEnd",
       categorie: "devmt",
@@ -227,11 +234,12 @@ export const OpleidingProvider = (props) => {
         "Weinige beroepen zijn voor het leven maar deze is het zeker, bovendien zal je ook een leven lang kunnen evolueren in dit beroep waar een groeiende vraag naar is vanuit de bedrijfswereld.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Kennis van Windows 10.$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Kennis van Windows 10.",
     },
     {
       id: 5,
       img: "networks.jpg",
+      ribbon: "plaatsweg",
       titel: "PC & Netwerktechnicus",
       ondertitel: "Handige harries met logica",
       categorie: "netw",
@@ -259,15 +267,16 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
     {
       id: 7,
       img: "ukFrontend.jpg",
+      ribbon: "plaatsweg",
       titel: "ICT Systeembeheer",
       ondertitel: "Je zorgt dat alles werkt",
       categorie: "devmt",
-      periode: "28september - 01juli 2021</h6",
+      periode: "28september - 01juli 2021",
 
       modaltitel: "kuisvrouw",
       modalondertitel: "Webshops zitten in de lift",
@@ -291,15 +300,16 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$ Wiskundig inzicht en doorzettingsvermogen hebben.",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++). Wiskundig inzicht en doorzettingsvermogen hebben.",
     },
     {
       id: 25,
       img: "security.jpg",
+      ribbon: "plaatsweg",
       titel: "ICT netwerken-, server en internetsecurity",
       ondertitel: "Zowel Windows als Linux",
       categorie: "netw",
-      periode: "28september - 01juli 2021</h6",
+      periode: "28september - 01juli 2021",
 
       modaltitel: "kuisvrouw",
       modalondertitel: "Webshops zitten in de lift",
@@ -323,12 +333,12 @@ export const OpleidingProvider = (props) => {
         "Iedereen die een professionele webshop wil leren maken in een framework is welkom in deze praktijkgerichte opleiding frontend developer.",
 
       modalvoorwaarden:
-        "Van maandag tot vrijdag, van 9 tot 17u. $ 50' middagpauze. $ geen les op woensdag, zaterdag en zondag (studiedagen).$Groepjes van max 7cursisten.$ - Meerderjarig en ingeschreven zijn bij de VDAB.$$Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering.$ Mac of PC (8ram++).$",
+        "Van maandag tot vrijdag, van 9 tot 17u.  50' middagpauze.  geen les op woensdag, zaterdag en zondag (studiedagen).Groepjes van max 7cursisten. - Meerderjarig en ingeschreven zijn bij de VDAB.Vervoerskosten deels terugbetaald, geen degressiviteit van werkloosheidsuitkering. Mac of PC (8ram++).",
     },
   ]);
 
   return (
-    <OpleidingContext.Provider value={[movies, setMovies]}>
+    <OpleidingContext.Provider value={[courses, setCourses]}>
       {props.children}
     </OpleidingContext.Provider>
   );

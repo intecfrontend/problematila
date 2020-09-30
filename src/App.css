@@ -2,14 +2,20 @@
   text-align: center
 }
 
+/* .micourses {
+  margin-top: 10vw;
+  border: yellow solid 10px;
+} */
+
 .networkstitels {
   font-weight: bold;
   padding-bottom: 3vh;
 }
 
 .fixedheight55 {
-  height: 55px !important
+  height: 55px !important;
 }
+
 .courseimg {
   padding: 5%;
   background: rgba(242, 239, 239, 0.6);
@@ -93,7 +99,7 @@
 .Coursetemplate {
   position: absolute;
   z-index: -30;
-  top: 250px;
+  top: 220px;
 }
 
 .moving {
@@ -175,14 +181,3 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
-
-  .cardwrap {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 2vw;
-    padding: 0vw 0vw;
-    width: 70vw;
-    margin-left: 15vw
-  }
-}

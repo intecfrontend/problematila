@@ -11,26 +11,27 @@ import { Button, Form } from "react-bootstrap";
 import ModalContent from "./components/modals/ModalContent";
 import "./components/modals/ModalContent.css";
 import { OpleidingProvider } from "./OpleidingContext";
-import {OpleidingContext} from "./OpleidingContext";
-import Buttoni from "./components/buttoni";
+import { OpleidingContext } from "./OpleidingContext";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 
-// const [movies, setMovies] = useContext(OpleidingContext);
+// const [courses, setCourses] = useContext(OpleidingContext);
 
-// line 18 where to put this? test.js doesn't work, 
-//how to take info out of a context array, 
-//je schrijft je in vor de cursus met als titel:{movies.titel} periode: {movies.id}
+// line 18 where to put this? test.js doesn't work,
+//how to take info out of a context array,
+//je schrijft je in vor de cursus met als titel:{courses.titel} periode: {courses.id}
 
 class App extends Component {
-  
   constructor(props) {
     super(props);
-    this.state = { modalIsOpen: false };
-    movies: {};
+    this.state = { modalIsOpen: false, course: {} };
+    courses: {}
+    this.setActiveCourse = this.setActiveCourse.bind(this);
     this.setModalIsOpen = this.setModalIsOpen.bind(this);
   }
 
-  
+  setActiveCourse(course) {
+    this.setState({ course: course });
+  }
   setModalIsOpen(modalIsOp) {
     this.setState({ modalIsOpen: modalIsOp });
   }
@@ -39,44 +40,34 @@ class App extends Component {
     return (
       <OpleidingProvider>
         <div className="App">
-          <button onClick={() => this.setModalIsOpen(true)}>open</button>
-
-          {/* {movies.map((movie) => ( */}
+          {/* <button onClick={() => this.setModalIsOpen(true)}>open</button> */}
           <Modal
             isOpen={this.state.modalIsOpen}
             className=" myshadowbut mimodal"
           >
-
-          {/* titel={movie.titel} */}
-
             <div className="fixedheight55 exiter">
-              <CloseRoundedIcon onClick={() => this.setModalIsOpen(false)} className="exit miexit" />
+              <CloseRoundedIcon
+                onClick={() => this.setModalIsOpen(false)}
+                className="exit miexit"
+              />
             </div>
             <div className="scroll centermodal">
               <div className="frame">
-                <ModalContent />
-
-                <div className="fixedheight55 buttonmodal">
-                  <div className="L F hoverblocker bottomstripe">
-                    {/* {titel} */}
-                  </div>
-                  <div className="Lower">
-                    <Buttoni />
-                  </div>
-                </div>
+                <ModalContent course={this.state.course} />
               </div>
             </div>
-          </Modal> ))}
+          </Modal>
         </div>
-        <CourseList
-          setModalIsOpen={this.setModalIsOpen}
-          className="Coursetemplate"
-        />
+        <div className="micourses">
+          <CourseList
+            setModalIsOpen={this.setModalIsOpen}
+            setActiveCourse={this.setActiveCourse}
+            className="Coursetemplate"
+          />
+        </div>
       </OpleidingProvider>
-         
-
-          );
+    );
   }
-};
+}
 
 export default App;

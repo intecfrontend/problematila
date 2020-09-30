@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 import { OpleidingContext } from "./OpleidingContext";
 
-const AddMovie = () => {
+const AddCourse = () => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-  const [movies, setMovies] = useContext(OpleidingContext);
+  const [courses, setCourses] = useContext(OpleidingContext);
 
   const updateName = (e) => {
     setName(e.target.value);
@@ -14,16 +14,16 @@ const AddMovie = () => {
     setPrice(e.target.value);
   };
 
-  const addMovie = (e) => {
+  const addCourse = (e) => {
     e.preventDefault();
-    setMovies((preMovies) => [
-      ...preMovies,
+    setCourses((preCourses) => [
+      ...preCourses,
       { name: name, price: "$" + price },
     ]);
   };
 
   return (
-    <form onSubmit={addMovie}>
+    <form onSubmit={addCourse}>
       <input type="text" name="name" value={name} onChange={updateName} />
       <input type="text" name="price" value={price} onChange={updatePrice} />
       <button>Submit</button>
@@ -31,4 +31,4 @@ const AddMovie = () => {
   );
 };
 
-export default AddMovie;
+export default AddCourse;

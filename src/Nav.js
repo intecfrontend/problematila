@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { OpleidingContext } from "./OpleidingContext";
-// class Movie extends Component {
+// class Course extends Component {
 
 const Nav = () => {
-  const [movies, setMovies] = useContext(OpleidingContext);
+  const [courses, setCourses] = useContext(OpleidingContext);
   return (
     <div className="navwrap">
       <p className="navdiv"></p>
-      <p className="navp">{movies.length} geplande opleidingen: </p>
+      <p className="navp">{courses.length} geplande opleidingen: </p>
     </div>
   );
 };
